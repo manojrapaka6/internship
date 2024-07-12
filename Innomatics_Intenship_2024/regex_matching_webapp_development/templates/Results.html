@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression Results</title>
+</head>
+<body>
+    <h1>Results</h1>
+    <p>Text: {{ text }}</p>
+    <p>Pattern: {{ pattern }}</p>
+    <p>Matches:</p>
+    <ul>
+        {% for match in matches %}
+        <li>{{ match }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
